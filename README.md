@@ -14,7 +14,7 @@ uv run main.py
 Or you can replace your src/ref pcd
 
 ```bash
-python main.py \
+uv run main.py \
   --corr corr.pkl \
   --ref pcd_1.ply \
   --src pcd_2.ply
