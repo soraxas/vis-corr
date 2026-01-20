@@ -215,7 +215,7 @@ def visualize_pair(
     color_label = "raw-color" if use_raw else "distinct-color"
     help_text = f"Controls: 1=raw 2=est 3=gt 4=corr m/M=cycle q=close | {color_label}"
     vis = o3d.visualization.VisualizerWithKeyCallback()
-    vis.create_window(window_name=f"ColorPCR viewer | {help_text}")
+    vis.create_window(window_name=f"CorrVis viewer | {help_text}")
     view_option = vis.get_view_control() or o3d.visualization.ViewControl()
     render_option = vis.get_render_option() or o3d.visualization.RenderOption()
     render_option.background_color = np.asarray([1.0, 1.0, 1.0])
